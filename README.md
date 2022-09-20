@@ -28,7 +28,7 @@ Login to Clever Cloud and create a Node.JS application with option detailed in c
 
 ### Step 3: 🏗 Adapt the app to make it buildable and runnable on Clever Cloud  
 
- - Make the port used by the app configurable using an environment variable: `PORT=8080 npm run start` should start app on port 8080
+ - Make the port used by the app configurable using an environment variable: `PORT=8080 npm run start` (on Windows: `set PORT=8080 && npm run start`) should start app on port 8080
  - Rework/add NPM scripts in `package.json`:
    - `install`: should build the app
    - `start`: should start the built app  
