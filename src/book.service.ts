@@ -49,8 +49,8 @@ export class BookService implements OnModuleInit {
 
     async onModuleInit() : Promise<void>{
         await Promise.all( [ this.loadBooksFromAPI() ] );
-        console.log("Hey test");
-        console.log(this.books);
+        // console.log("Hey test");
+        // console.log(this.books);
     }
 
     addBook(book: BookDto){
