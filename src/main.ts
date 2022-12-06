@@ -6,8 +6,8 @@ import { BookModule } from './book.module';
 async function bootstrap() {
   const app = await NestFactory.create(BookModule);
   app.useGlobalPipes(new ValidationPipe());
-  const port = process.env.PORT;
-  await app.listen(port);
+  // const port = process.env.PORT;
+  await app.listen(3030);
 }
 bootstrap();
 

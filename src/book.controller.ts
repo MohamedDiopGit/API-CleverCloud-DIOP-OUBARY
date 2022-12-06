@@ -1,6 +1,8 @@
 import { Controller, Get, Post, Body, Param, Delete, Query } from '@nestjs/common';
+import { readFile } from 'fs';
 import { BookService } from './book.service';
 import { BookDto } from './interface/Book.dto'
+import { MonumentDto } from './interface/Monument.dto';
 
 @Controller('/books')
 export class BookController {
@@ -12,10 +14,11 @@ export class BookController {
   }
 
   @Get()
-  getAllBooks(@Query('author') author: string) : BookDto[]{
+  getAllBooks(@Query('author') author: string){
     if(author){
       return this.bookService.getBooksOf(author);
     }
+      
     return this.bookService.getAllBooks();
   }
 

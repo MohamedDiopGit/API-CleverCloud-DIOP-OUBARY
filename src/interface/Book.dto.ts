@@ -18,5 +18,7 @@ export class BookDto {
         this.date = date;
     }   
 
+
+    
 }
 
