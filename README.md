@@ -1,4 +1,4 @@
-The JSON file can be accessed by https://bookshelfmdp.cleverapps.io/books
+The JSON file can be accessed by https://bookshelfmdp.cleverapps.io/mouments
 
 It contains all the monuments with their imges, and with graves of each people  
 
