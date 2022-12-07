@@ -6,4 +6,4 @@ import { BookDto } from "./interface/Book.dto";
     imports: [HttpModule],
     providers: [BookDto],
   })
-  export class BookModule {}
+  export class MonumentModule {}
