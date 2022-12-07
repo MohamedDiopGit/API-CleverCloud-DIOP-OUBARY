@@ -6,8 +6,8 @@ import { MonumentModule } from './monument.module';
 async function bootstrap() {
   const app = await NestFactory.create(MonumentModule);
   app.useGlobalPipes(new ValidationPipe());
-  // const port = process.env.PORT;
-  await app.listen(3030);
+  const port = process.env.PORT;
+  await app.listen(port);
 }
 bootstrap();
 
